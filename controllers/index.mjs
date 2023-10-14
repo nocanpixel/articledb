@@ -1,4 +1,4 @@
-import Words from "../models/Main.mjs";
+import {Words} from "../models/Main.mjs";
 
 class mainController {
     async Language(req, res) {
