@@ -10,11 +10,11 @@ export const sequelize = new Sequelize(
   {
     host: process.env.HOST,
     dialect: "postgres",
-    // dialectOptions: {
-    //   ssl: {
-    //     require: true, // Require SSL connection
-    //     rejectUnauthorized: false, // Disable rejecting unauthorized connections (not recommended for production)
-    //   },
-    // },
+    dialectOptions: {
+      ssl: {
+        require: true, // Require SSL connection
+        rejectUnauthorized: false, // Disable rejecting unauthorized connections (not recommended for production)
+      },
+    },
   }
 );
