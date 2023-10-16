@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 
 
-const allowedOrigins = ['http://localhost:5173','https://cambe.app']
+const allowedOrigins = ['http://localhost:5173','https://www.cambe.app']
 
 app.use(cors({
   origin: allowedOrigins,
